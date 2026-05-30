@@ -1,0 +1,14 @@
+pandas
+matplotlib
+tables
+scikit-learn
+libsm6
+libxext6
+libxrender-dev
+opencv-python
+Pillow
+nvidia-ml-py3
+huggingface_hub==0.23.0
+transformers==4.40.2
+tqdm==4.42.1
+boto3==1.34.104 requests==2.31.0 regex sentencepiece==0.2.0 sacremoses==0.1.1
