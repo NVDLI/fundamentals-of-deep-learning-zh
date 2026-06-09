@@ -2,7 +2,9 @@ import os
 import torch
 import torch.nn as nn
 from pathlib import Path
-
+import numpy as np
+import pandas as pd
+from datasets import load_dataset
 
 # Classes excluded from training — digits and letters requiring hand motion.
 ASL_EXCLUDE = frozenset({'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Z'})
@@ -35,9 +37,6 @@ def download_asl_dataset(data_dir="data/asl_data", exclude=None):
     Returns:
         (train_df, valid_df) — pandas DataFrames ready for MyDataset
     """
-    import numpy as np
-    import pandas as pd
-
     data_dir = Path(data_dir)
     train_csv = data_dir / "sign_mnist_train.csv"
     valid_csv = data_dir / "sign_mnist_valid.csv"
@@ -47,7 +46,6 @@ def download_asl_dataset(data_dir="data/asl_data", exclude=None):
         return pd.read_csv(train_csv), pd.read_csv(valid_csv)
 
     print("Downloading ASL dataset from HuggingFace Hub …")
-    from datasets import load_dataset
 
     exclude  = ASL_EXCLUDE if exclude is None else frozenset(exclude)
     hf_ds    = load_dataset("juanjodurillo/asl-hg")
