@@ -1,6 +1,6 @@
 # Fundamentals of Deep Learning Course Notebooks
 
-This repository contains Jupyter notebooks and environment setup files for a hands-on deep learning course. The notebooks introduce JupyterLab, image classification, convolutional neural networks, data augmentation, model deployment, transfer learning, and natural language processing.
+This repository contains Jupyter notebooks and environment setup files for a hands-on deep learning course. The notebooks introduce  image classification, convolutional neural networks, data augmentation, model deployment, transfer learning, and natural language processing.
 
 ## Repository Contents
 
@@ -102,6 +102,12 @@ Start JupyterLab from the repository directory:
 
 ```bash
 jupyter lab tutorials
+```
+
+or simply by running the script on `environment/entrypoint.sh`
+
+```bash
+sh environment/entrypoint.sh
 ```
 
 JupyterLab will print a local URL in the terminal. Open that URL in your browser, then select a notebook from the file browser.
