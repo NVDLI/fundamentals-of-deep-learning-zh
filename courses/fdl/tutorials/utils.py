@@ -50,7 +50,7 @@ def download_asl_dataset(data_dir="data/asl_data", exclude=None):
     from datasets import load_dataset
 
     exclude  = ASL_EXCLUDE if exclude is None else frozenset(exclude)
-    hf_ds    = load_dataset("juanjodurillo/asl-hg", "processed")
+    hf_ds    = load_dataset("juanjodurillo/asl-hg")
 
     # Build label mapping: original integer → new contiguous integer (sorted alphabetically)
     all_classes      = hf_ds["train"].features["label"].names   # list[str], indexed by label int
