@@ -12,24 +12,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         git \
         gcc \
     && rm -rf /var/lib/apt/lists/*
+RUN apt update && apt install -y libsm6 libxext6 libxrender-dev
 
-# Python packages
-RUN pip install --no-cache-dir \
-        jupyterlab==4.* \
-        ipywidgets \
-        torchvision==0.16.* \
-        transformers==4.35.* \
-        pillow \
-        matplotlib \
-        numpy \
-        pandas \
-	datasets
- 
+# Uncomment the following to upgrade to latest jupyterlab
+RUN pip install --upgrade jupyterlab==4.2.0
+RUN pip install ipywidgets==8.1.2
 
-# Shell niceties
 ENV SHELL=/bin/bash
 ENV PYTHONPATH=/dli/task
-
 WORKDIR /dli/task
 COPY tutorials/ .
 
