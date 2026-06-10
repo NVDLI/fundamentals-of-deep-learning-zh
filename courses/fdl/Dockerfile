@@ -20,8 +20,10 @@ RUN pip install ipywidgets==8.1.2
 
 ENV SHELL=/bin/bash
 ENV PYTHONPATH=/dli/task
-WORKDIR /dli/task
-COPY tutorials/ .
+WORKDIR /dli/
+COPY .
+
+WORKDIR /dli/tutorials
 
 EXPOSE 8888
 
