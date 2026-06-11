@@ -1,0 +1,15 @@
+# Code owners for the FDL course repository.
+# Members of the Open Source Playbook team (Expand the Funnel workstream).
+# Replace the placeholder handles with GitLab usernames before enabling
+# branch-protection review requirements.
+
+# Default owners for everything in the repo.
+*                       @canux @jiyangw @ddetering
+
+# Course materials.
+/courses/               @canux @jiyangw @ddetering
+
+# Docs site + build, CI, and publishing.
+/.gitlab-ci.yml         @canux
+/docusaurus.config.js   @canux
+/docs/                  @canux @jiyangw @ddetering
