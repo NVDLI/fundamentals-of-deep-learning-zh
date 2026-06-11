@@ -36,5 +36,4 @@ CMD ["jupyter", "lab", \
      "--allow-root", \
      "--no-browser", \
      "--NotebookApp.token=", \
-     "--NotebookApp.password=", \
-     "--NotebookApp.base_url=/lab"]
+     "--NotebookApp.password="]
