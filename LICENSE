@@ -1,0 +1,27 @@
+PLACEHOLDER — replace this entire file before publishing (OSRB requirement).
+
+This open-source course is dual-licensed:
+  - Code (.py, .sh, .ipynb, .c/.cpp/.cu, .ts/.js, ...): Apache-2.0
+  - Content (.md, slides, docs): CC-BY-4.0
+
+A compliant LICENSE file MUST contain the FULL TEXT of BOTH licenses. Missing
+either one = OSRB FAIL. You may keep them in this one file separated by a line
+of three dashes (---), or split into LICENSE-APACHE-2.0 and LICENSE-CC-BY-4.0.
+
+RED LINE: Do NOT hand-write or paraphrase the license text. Copy the canonical
+full text verbatim from the NVIDIA Confluence OSS space. Self-authored legal
+text is rejected by the OSRB.
+
+================================================================================
+Apache License 2.0
+================================================================================
+
+<PASTE THE FULL Apache-2.0 TEXT FROM THE NVIDIA CONFLUENCE OSS SPACE HERE>
+
+---
+
+================================================================================
+Creative Commons Attribution 4.0 International (CC-BY-4.0)
+================================================================================
+
+<PASTE THE FULL CC-BY-4.0 TEXT FROM THE NVIDIA CONFLUENCE OSS SPACE HERE>
