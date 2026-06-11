@@ -1,0 +1,76 @@
+# Build the Docusaurus site and publish to GitLab Pages.
+# Mirrors the theme's base-path derivation so the site works under a Pages
+# sub-path. Docusaurus outputs to build/; GitLab Pages serves from public/.
+#
+# The site depends on @dli/docusaurus-theme-kaizen, published to the Package
+# Registry of the kaizen-pages-theme project (id 357983). CI authenticates to
+# that registry with the job token.
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS
+      when: never
+    - if: $CI_COMMIT_BRANCH
+    - if: $CI_COMMIT_TAG
+
+stages:
+  - build
+  - deploy
+
+default:
+  image: node:20
+  # Only the `pages` shared runner is available to this group.
+  tags:
+    - pages
+
+variables:
+  # Project id of kaizen-pages-theme (hosts the @dli package registry).
+  THEME_PROJECT_ID: "357983"
+
+# Point the @dli scope at the theme project's Package Registry and authenticate
+# with the CI job token, then install. npm install (not ci) since no lockfile
+# is committed.
+.install: &install
+  - |
+    {
+      echo "@dli:registry=${CI_API_V4_URL}/projects/${THEME_PROJECT_ID}/packages/npm/"
+      echo "${CI_API_V4_URL#https:}/projects/${THEME_PROJECT_ID}/packages/npm/:_authToken=\${CI_JOB_TOKEN}"
+    } > .npmrc
+  - npm install
+
+# Pages base path = the path portion of CI_PAGES_URL (empty for a per-project
+# subdomain served at root; "/group/project" for path-based Pages).
+.compute_base: &compute_base
+  - SITE_BASE_PATH="$(echo "$CI_PAGES_URL" | sed -E 's#^[a-z]+://[^/]+##; s#/$##')"
+  - export SITE_BASE_PATH
+  - 'echo "SITE_BASE_PATH=[$SITE_BASE_PATH]"'
+
+# MR / feature branch: build a reviewable artifact, no deploy.
+build:
+  stage: build
+  script:
+    - *install
+    - *compute_base
+    - SITE_BASE_PATH="$SITE_BASE_PATH" npm run build
+  artifacts:
+    paths:
+      - build
+    expire_in: 1 week
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+
+# Default branch: build with the real Pages base path and publish.
+pages:
+  stage: deploy
+  script:
+    - *install
+    - *compute_base
+    - SITE_BASE_PATH="$SITE_BASE_PATH" npm run build
+    - rm -rf public && mv build public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
