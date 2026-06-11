@@ -14,14 +14,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 RUN apt update && apt install -y libsm6 libxext6 libxrender-dev
 
+COPY ./environment/requirements.txt .
+RUN pip install -r requirements.txt
+
+
 # Uncomment the following to upgrade to latest jupyterlab
 RUN pip install --upgrade jupyterlab==4.2.0
 RUN pip install ipywidgets==8.1.2
 
 ENV SHELL=/bin/bash
-ENV PYTHONPATH=/dli/task
+ENV PYTHONPATH=/dli
 WORKDIR /dli/
-COPY .
+COPY . .
 
 WORKDIR /dli/tutorials
 
