@@ -251,9 +251,4 @@ within our community.
 
 ## License
 
-Copyright © 2024 NVIDIA Corporation. This content is released under the
-Apache 2.0 License.
-
-The full DLI course — including dedicated GPU access, auto-graded assessments,
-and a certificate of completion — is available at nvidia.com/dli and is subject
-to separate terms of service.
+This project is licensed under the Apache License 2.0.
