@@ -7,7 +7,7 @@ sidebar_position: 2
 # Setup
 
 Replace this page with setup instructions for the FDL course. The course
-materials live under [`courses/fdl/`](https://gitlab-master.nvidia.com/dli/expand-the-funnel/fdl_test/-/tree/main/courses/fdl).
+materials live under [`fdl/`](https://gitlab-master.nvidia.com/dli/expand-the-funnel/fundamentals-of-deep-learning/-/tree/main/fdl).
 
 Code blocks render with syntax highlighting:
 
