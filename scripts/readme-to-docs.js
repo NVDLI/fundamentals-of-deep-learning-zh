@@ -5,8 +5,9 @@
 //
 // The course site is one page: authors maintain only README.md. This script
 // stamps it into docs/intro.md (slug "/") right before `docusaurus start` and
-// `docusaurus build` (wired as prestart/prebuild in package.json). The docs/
-// folder is build output — it is gitignored and never edited by hand.
+// `docusaurus build` (wired as prestart/prebuild in package.json). Only the
+// generated docs/intro.md is gitignored; the docs/ folder itself stays open for
+// any hand-authored pages a course wants to add.
 //
 // README.md is rendered as CommonMark (docusaurus.config.js sets
 // markdown.format: 'detect' for .md), so raw `<...>` and `{...}` in the README
