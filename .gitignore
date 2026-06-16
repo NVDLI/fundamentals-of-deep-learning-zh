@@ -6,6 +6,9 @@
 /.docusaurus
 /public
 
+# Single docs page is generated from README.md at build time (prebuild hook).
+/docs
+
 # Misc
 .DS_Store
 *.log
