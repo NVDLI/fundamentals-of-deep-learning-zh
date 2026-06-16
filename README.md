@@ -147,7 +147,7 @@ automatically. Check progress under the Actions tab.
 
 Congratulations! Once set up, your project documentation will be live at:
 
-🌟 <https://fdl-test-d701be.gitlab-master-pages.nvidia.com/>
+🌟 <https://dli.gitlab-master-pages.nvidia.com/expand-the-funnel/fundamentals-of-deep-learning/>
 
 ## Add Content
 
