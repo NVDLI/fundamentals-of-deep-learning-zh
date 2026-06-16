@@ -4,7 +4,10 @@
   "private": true,
   "description": "GitLab Pages documentation site for the FDL course, built on the shared @dli/docusaurus-theme-kaizen preset.",
   "scripts": {
+    "docs:from-readme": "node scripts/readme-to-docs.js",
+    "prestart": "npm run docs:from-readme",
     "start": "docusaurus start",
+    "prebuild": "npm run docs:from-readme",
     "build": "docusaurus build",
     "serve": "docusaurus serve"
   },

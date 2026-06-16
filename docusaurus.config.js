@@ -21,6 +21,11 @@ const config = {
   onBrokenLinks: 'warn',
   i18n: {defaultLocale: 'en', locales: ['en']},
 
+  // The single page is generated from README.md (see scripts/readme-to-docs.js).
+  // 'detect' renders .md as CommonMark, so raw `<...>`/`{...}` in the README
+  // don't break the MDX build.
+  markdown: {format: 'detect'},
+
   // This one line gives the shared Kaizen look + search + i18n + AI layer.
   presets: [
     [
