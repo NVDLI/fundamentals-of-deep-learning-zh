@@ -1,6 +1,6 @@
 # Fundamentals of Deep Learning
 
-[![Launch on Brev](https://img.shields.io/badge/Launch%20on-Brev-76B900)](https://brev.nvidia.com/) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue)](https://creativecommons.org/licenses/by/4.0/)
+[![Launch on Brev](https://img.shields.io/badge/Launch%20on-Brev-76B900)](https://brev.nvidia.com/) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue)](https://creativecommons.org/licenses/by/4.0/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
 
 Fundamentals of Deep Learning is an open-source, hands-on course from the NVIDIA Deep Learning Institute (DLI) that introduces neural networks, convolutional architectures, and transfer learning through interactive Jupyter notebooks.
 
@@ -13,6 +13,17 @@ In these labs, learners will:
 - Use data augmentation and transfer learning to improve accuracy on limited data
 - Manage the bias-variance tradeoff and apply techniques to address overfitting
 - Deploy a trained model to make predictions on new, unseen data
+
+## Course Modules
+
+| Module | Slide Deck | Notebooks |
+|---|----------|--------|
+| 01. An Introduction to Deep Learning | [slides_01.pptx](.\course_content\slides\slides_01.pptx) | [01_mnist.ipynb](.\course_content\tutorials\01_mnist.ipynb) |
+| 02. How a Neural Network Trains | [slides_02.pptx](.\course_content\slides\slides_02.pptx) | [02_asl.ipynb](.\course_content\tutorials\02_asl.ipynb) |
+| 03. Convolutional Neural Networks | [slides_03.pptx](.\course_content\slides\slides_03.pptx) | [03_asl_cnn.ipynb](.\course_content\tutorials\03_asl_cnn.ipynb) |
+| 04. Data Augmentation and Deployment | [slides_04.pptx](.\course_content\slides\slides_04.pptx) | [04a_asl_augmentation.ipynb](.\course_content\tutorials\04a_asl_augmentation.ipynb) <br> [04b_asl_predictions.ipynb](.\course_content\tutorials\04b_asl_predictions.ipynb) |
+| 05. Pre-Trained Models | [slides_05.pptx](.\course_content\slides\slides_05.pptx) | [05a_doggy_door.ipynb](.\course_content\tutorials\05a_doggy_door.ipynb) <br> [05b_corgi_door.ipynb](.\course_content\tutorials\05b_corgi_door.ipynb) |
+| 06. Advanced Architectures | [slides_06.pptx](.\course_content\slides\slides_06.pptx) | [06_nlp_.ipynb](.\course_content\tutorials\06_nlp.ipynb)  |
 
 ## Usage
 
