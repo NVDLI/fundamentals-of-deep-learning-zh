@@ -16,14 +16,14 @@ In these labs, learners will:
 
 ## Course Modules
 
-| Module | Slide Deck | Notebooks |
-|---|----------|--------|
-| 01. An Introduction to Deep Learning | [slides_01.pptx](.\course_content\slides\slides_01.pptx) | [01_mnist.ipynb](.\course_content\tutorials\01_mnist.ipynb) |
-| 02. How a Neural Network Trains | [slides_02.pptx](.\course_content\slides\slides_02.pptx) | [02_asl.ipynb](.\course_content\tutorials\02_asl.ipynb) |
-| 03. Convolutional Neural Networks | [slides_03.pptx](.\course_content\slides\slides_03.pptx) | [03_asl_cnn.ipynb](.\course_content\tutorials\03_asl_cnn.ipynb) |
-| 04. Data Augmentation and Deployment | [slides_04.pptx](.\course_content\slides\slides_04.pptx) | [04a_asl_augmentation.ipynb](.\course_content\tutorials\04a_asl_augmentation.ipynb) <br> [04b_asl_predictions.ipynb](.\course_content\tutorials\04b_asl_predictions.ipynb) |
-| 05. Pre-Trained Models | [slides_05.pptx](.\course_content\slides\slides_05.pptx) | [05a_doggy_door.ipynb](.\course_content\tutorials\05a_doggy_door.ipynb) <br> [05b_corgi_door.ipynb](.\course_content\tutorials\05b_corgi_door.ipynb) |
-| 06. Advanced Architectures | [slides_06.pptx](.\course_content\slides\slides_06.pptx) | [06_nlp_.ipynb](.\course_content\tutorials\06_nlp.ipynb)  |
+| # | Module | Slide Deck | Notebooks |
+|---|---|----------|--------|
+| 01 | An Introduction to Deep Learning | [slides_01.pptx](./course_content/slides/slides_01.pptx) | [01_mnist.ipynb](./course_content/tutorials/01_mnist.ipynb) |
+| 02 | How a Neural Network Trains | [slides_02.pptx](./course_content/slides/slides_02.pptx) | [02_asl.ipynb](./course_content/tutorials/02_asl.ipynb) |
+| 03 | Convolutional Neural Networks | [slides_03.pptx](./course_content/slides/slides_03.pptx) | [03_asl_cnn.ipynb](./course_content/tutorials/03_asl_cnn.ipynb) |
+| 04 | Data Augmentation and Deployment | [slides_04.pptx](./course_content/slides/slides_04.pptx) | [04a_asl_augmentation.ipynb](./course_content/tutorials/04a_asl_augmentation.ipynb) <br> [04b_asl_predictions.ipynb](./course_content/tutorials/04b_asl_predictions.ipynb) |
+| 05 | Pre-Trained Models | [slides_05.pptx](./course_content/slides/slides_05.pptx) | [05a_doggy_door.ipynb](./course_content/tutorials/05a_doggy_door.ipynb) <br> [05b_corgi_door.ipynb](./course_content/tutorials/05b_corgi_door.ipynb) |
+| 06 | Advanced Architectures | [slides_06.pptx](./course_content/slides/slides_06.pptx) | [06_nlp_.ipynb](./course_content/tutorials/06_nlp.ipynb)  |
 
 ## Usage
 
