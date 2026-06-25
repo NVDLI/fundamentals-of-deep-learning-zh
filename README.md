@@ -1,6 +1,6 @@
 # Fundamentals of Deep Learning
 
-[![Launch on Brev](https://img.shields.io/badge/Launch%20on-Brev-76B900)](https://brev.nvidia.com/) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue)](https://creativecommons.org/licenses/by/4.0/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
+[![Launch on Brev](https://img.shields.io/badge/Launch%20on-Brev-76B900)](https://brev.nvidia.com/) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
 
 Fundamentals of Deep Learning is an open-source, hands-on course from the NVIDIA Deep Learning Institute (DLI) that introduces neural networks, convolutional architectures, and transfer learning through interactive Jupyter notebooks.
 
@@ -63,7 +63,7 @@ Then open <http://localhost:8888> in your browser and navigate to the
 To deploy the content with the provided `Dockerfile`, run:
 
 ```bash
-docker build -t fdl-app . && docker run -d -p 8888:8888 --name fdl-container fdl-app
+docker build -t fdl-app . && docker run -d -p 8888:8888 --name fdl-container --gpus all fdl-app
 ```
 
 Then open <http://localhost:8888> in your browser and navigate to the
