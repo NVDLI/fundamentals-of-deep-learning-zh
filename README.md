@@ -23,7 +23,7 @@ In these labs, learners will:
 | 03 | Convolutional Neural Networks | [slides_03.pptx](./course_content/slides/slides_03.pptx) | [03_asl_cnn.ipynb](./course_content/tutorials/03_asl_cnn.ipynb) |
 | 04 | Data Augmentation and Deployment | [slides_04.pptx](./course_content/slides/slides_04.pptx) | [04a_asl_augmentation.ipynb](./course_content/tutorials/04a_asl_augmentation.ipynb) <br> [04b_asl_predictions.ipynb](./course_content/tutorials/04b_asl_predictions.ipynb) |
 | 05 | Pre-Trained Models | [slides_05.pptx](./course_content/slides/slides_05.pptx) | [05a_doggy_door.ipynb](./course_content/tutorials/05a_doggy_door.ipynb) <br> [05b_corgi_door.ipynb](./course_content/tutorials/05b_corgi_door.ipynb) |
-| 06 | Advanced Architectures | [slides_06.pptx](./course_content/slides/slides_06.pptx) | [06_nlp_.ipynb](./course_content/tutorials/06_nlp.ipynb)  |
+| 06 | Advanced Architectures | [slides_06.pptx](./course_content/slides/slides_06.pptx) | [06_nlp.ipynb](./course_content/tutorials/06_nlp.ipynb)  |
 
 > Note: Slide decks are not included in this GitLab branch because of repository size limits.
 > For review, the decks are available in Google Drive: [slide decks](https://drive.google.com/drive/folders/1EcqcouuIUduX8xu5vuTxCVZOymtPhxb9?usp=sharing).
@@ -42,12 +42,12 @@ In these labs, learners will:
 3. Select a GPU instance — an NVIDIA T4 or L4 is sufficient for all five labs.
 4. Click **Deploy**. The environment will be ready in ~2 minutes with CUDA,
    Python, and all dependencies pre-installed.
-5. Open JupyterLab from the Brev console and navigate to the `notebooks/` directory.
+5. Open JupyterLab from the Brev console and navigate to the `course_content/tutorials/` directory.
 
 #### 2. Clone and run locally
 
 ```bash
-git clone https://github.com/NVDLI/fundamentals_of_deep_learning.git
+git clone https://github.com/NVDLI/fundamentals-of-deep-learning.git
 cd course_content
 ```
 
