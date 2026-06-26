@@ -18,14 +18,14 @@ This repository contains Jupyter notebooks and environment setup files for a han
     ├── 04a_asl_augmentation.ipynb
     ├── 04b_asl_predictions.ipynb
     ├── 05a_doggy_door.ipynb
-    ├── 05b_presidential_doggy_door.ipynb
+    ├── 05b_corgi_door.ipynb
     ├── 06_nlp.ipynb
     └── utils.py
 ```
 
 ### `Dockerfile`
 
-Builds a JupyterLab environment based on `pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime`. It installs the Python packages needed by the notebooks, copies the contents of `tutorials/` into `/dli/task`, exposes port `8888`, and starts JupyterLab.
+Builds a JupyterLab environment based on `pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime`. It installs the Python packages needed by the notebooks, copies the contents of `tutorials/` into `/dli/tutorials`, exposes port `8888`, and starts JupyterLab.
 
 The Docker image is intended for hosts with an NVIDIA GPU and `nvidia-container-toolkit` installed.
 
@@ -47,7 +47,7 @@ Contains the course notebooks:
 - `04a_asl_augmentation.ipynb`: Data augmentation to improve model generalization.
 - `04b_asl_predictions.ipynb`: Using a trained model to make predictions.
 - `05a_doggy_door.ipynb`: Using pre-trained models.
-- `05b_presidential_doggy_door.ipynb`: Transfer learning with a pre-trained model.
+- `05b_corgi_door.ipynb`: Transfer learning with a pre-trained model.
 - `06_nlp.ipynb`: Natural language processing with sequence data.
 - `utils.py`: Shared helper code used by the notebooks.
 
@@ -75,7 +75,7 @@ To keep notebook edits on your local machine, mount the `tutorials/` directory w
 
 ```bash
 docker run --rm -it --gpus all -p 8888:8888 \
-  -v "$PWD/tutorials:/dli/task" \
+  -v "$PWD/tutorials:/dli/tutorials" \
   fdl-course
 ```
 
