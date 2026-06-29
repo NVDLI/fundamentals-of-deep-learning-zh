@@ -26,7 +26,7 @@ In these labs, learners will:
 | 06 | Advanced Architectures | [slides_06.pptx](./course_content/slides/slides_06.pptx) | [06_nlp.ipynb](./course_content/tutorials/06_nlp.ipynb)  |
 
 > Note: Slide decks are not included in this GitLab branch because of repository size limits.
-> For review, the decks are available in Google Drive: [slide decks](https://drive.google.com/drive/folders/1EcqcouuIUduX8xu5vuTxCVZOymtPhxb9?usp=sharing).
+> For review, the decks are available in Google Drive: [slide decks](https://drive.google.com/drive/folders/1ShCS0EOAG26cuLRkedbt5t_qPzmPoyHW?usp=sharing).
 > They will be added to the public GitHub repository before release.
 
 ## Usage
