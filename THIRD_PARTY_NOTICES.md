@@ -39,17 +39,22 @@ Nabonita Ghosh, Md. Rahatun Alam, Sudipto Chaki, and Md Masudul Islam.
 
 File: `course_content/tutorials/images/asl.png`
 
-- Source: https://commons.wikimedia.org/wiki/File:Asl_alphabet_gallaudet.svg
-- Status: Public domain
-- Modification: Converted from SVG to PNG.
+- Creator: Ds13 (Darren Stone)
+- Source: https://commons.wikimedia.org/wiki/File:Asl_alphabet_gallaudet.png
+- Status: Released into the public domain by the creator
+- Modifications: Original file renamed to `asl.png`; image content was not modified
+
 
 ## Jack Russell Terrier photograph
 
 File: `course_content/tutorials/data/doggy_door_images/happy_dog.jpg`
 
+- Photographer: Plank
+- Photographer profile: https://commons.wikimedia.org/wiki/User:Plank
 - Source: https://commons.wikimedia.org/wiki/File:Jack_Russell_Terrier_1.jpg
 - License: Creative Commons Attribution 3.0 Unported
-- Modification: Resized for course use.
+- License URL: https://creativecommons.org/licenses/by/3.0/
+- Modification: Resized for course use
 
 ## MNIST figure
 
@@ -64,14 +69,13 @@ from the MNIST Database of Handwritten Digits.
 - Modification: NVIDIA selected and arranged samples into one educational figure.
 
 CC BY 4.0 covers NVIDIA's selection, arrangement, and presentation.
-The underlying MNIST dataset was approved through NVIDIA's dataset
-review process.
 
-## Penny the Corgi dataset
+## Penny  and brow_bear within the Corgi dataset
 
 Files:
 
 - `course_content/tutorials/images/Penny.jpg`
+- `course_content/tutorials/images/brown_bear.jpg`
 
 - Creator/licensor: Danielle Detering 
 - Source: https://www.kaggle.com/datasets/danielledetering/penny-the-corgi

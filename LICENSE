@@ -1,5 +1,4 @@
 Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES.
-All rights reserved.
 
 This repository contains material under multiple licenses.
 
@@ -14,6 +13,6 @@ This repository contains material under multiple licenses.
    Code cells are Apache-2.0; non-code cells are CC-BY-4.0.
 
 4. Third-party materials are not relicensed by NVIDIA. They remain under
-the licenses identified in THIRD_PARTY_NOTICES.md and REUSE.toml.
+   the licenses identified in THIRD_PARTY_NOTICES.md and REUSE.toml.
 
 NVIDIA names, logos, and trademarks are not licensed for general reuse.

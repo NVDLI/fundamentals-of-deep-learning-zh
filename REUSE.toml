@@ -22,18 +22,16 @@ SPDX-FileComment = "Selected from the ASL-HG dataset and obtained through https:
 
 [[annotations]]
 path = "course_content/tutorials/images/asl.png"
-SPDX-FileCopyrightText = [
-    "2004 Ds13",
-    "2019 Marnanel"
-]
+SPDX-FileCopyrightText = "2004 Ds13 (Darren Stone)"
 SPDX-License-Identifier = "LicenseRef-Public-Domain"
-SPDX-FileComment = "Public-domain ASL alphabet image. Converted from the Wikimedia SVG source to PNG."
+SPDX-FileComment = "Original public-domain PNG obtained from https://commons.wikimedia.org/wiki/File:Asl_alphabet_gallaudet.png. The original filename was changed to asl.png; the image content was not modified."
 
 
 # happy_dog.jpg — Wikimedia Commons
 
 [[annotations]]
 path = "course_content/tutorials/data/doggy_door_images/happy_dog.jpg"
+
 SPDX-FileCopyrightText = "Plank <https://commons.wikimedia.org/wiki/User:Plank>"
 SPDX-License-Identifier = "CC-BY-3.0"
 SPDX-FileComment = "Jack Russell Terrier photograph obtained from Wikimedia Commons and resized for course use."
@@ -46,7 +44,7 @@ path = "course_content/tutorials/images/mnist1.png"
 SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
 SPDX-License-Identifier = "CC-BY-4.0"
 SPDX-FileContributor = "Yann LeCun, Corinna Cortes, and Christopher J. C. Burges — MNIST dataset"
-SPDX-FileComment = "NVIDIA-created selection and arrangement of MNIST samples obtained through torchvision.datasets.MNIST. CC-BY-4.0 covers NVIDIA's selection, arrangement, and presentation. The underlying dataset was approved through NVIDIA's dataset review process."
+SPDX-FileComment = "NVIDIA-created selection and arrangement of MNIST samples obtained through torchvision.datasets.MNIST. CC-BY-4.0 covers NVIDIA's selection, arrangement, and presentation."
 
 [[annotations]]
 path = [
@@ -67,12 +65,12 @@ path = [
     "course_content/tutorials/images/Penny.jpg",
     "course_content/tutorials/data/doggy_door_images/brown_bear.jpg"
 ]
-SPDX-FileCopyrightText = "NVIDIA Employee"
+SPDX-FileContributor = "Danielle Detering"
 SPDX-License-Identifier = "CC-BY-4.0"
 SPDX-FileComment = "Donated by the creator from the Penny the Corgi dataset: https://www.kaggle.com/datasets/danielledetering/penny-the-corgi."
 
 [[annotations]]
 path = "course_content/tutorials/data/doggy_door_images/sleepy_cat.jpg"
-SPDX-FileCopyrightText = "NVIDIA Employee"
+SPDX-FileContributor = "Vadim Kudlay"
 SPDX-License-Identifier = "CC-BY-4.0"
 SPDX-FileComment = "Original photograph supplied by an NVIDIA employee with authorization for distribution under CC BY 4.0."
