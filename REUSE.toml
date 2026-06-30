@@ -1,0 +1,7 @@
+version = 1
+
+[[annotations]]
+path = "course_content/tutorials/*.ipynb"
+SPDX-FileCopyrightText = "2026 NVIDIA CORPORATION & AFFILIATES"
+SPDX-License-Identifier = "Apache-2.0 AND CC-BY-4.0"
+SPDX-FileComment = "Code cells are Apache-2.0. Markdown and raw cells are CC-BY-4.0."
