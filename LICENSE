@@ -13,7 +13,7 @@ This repository contains material under multiple licenses.
 3. Each complete Jupyter notebook contains material under both licenses.
    Code cells are Apache-2.0; non-code cells are CC-BY-4.0.
 
-4. Third-party material retains its original license and is documented in
-   THIRD_PARTY_NOTICES.md.
+4. Third-party materials are not relicensed by NVIDIA. They remain under
+the licenses identified in THIRD_PARTY_NOTICES.md and REUSE.toml.
 
 NVIDIA names, logos, and trademarks are not licensed for general reuse.

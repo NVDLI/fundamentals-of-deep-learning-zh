@@ -1,0 +1,11 @@
+Public-domain declaration for the ASL alphabet image
+
+The source records that Ds13 released the work into the public domain
+worldwide. Where a public-domain dedication is not legally possible,
+the author granted permission to use the work for any purpose without
+conditions, except those required by law.
+
+The image was subsequently vectorized by Marnanel.
+
+Source:
+https://commons.wikimedia.org/wiki/File:Asl_alphabet_gallaudet.svg
