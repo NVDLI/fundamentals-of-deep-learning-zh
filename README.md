@@ -90,5 +90,19 @@ Please do not commit datasets or large binary files — use download scripts ins
 See [CONTRIBUTING](CONTRIBUTING.md) for full guidelines.
 
 ## License
+## License
 
-This project is licensed under [Creative Commons 4.0](LICENSE).
+This repository uses a mixed licensing model:
+
+- Source-code files and code cells in Jupyter notebooks:
+  [Apache License 2.0](LICENSES/Apache-2.0.txt)
+- Documentation, Markdown and raw notebook cells, and NVIDIA-created
+  educational media:
+  [Creative Commons Attribution 4.0 International](LICENSES/CC-BY-4.0.txt)
+- Third-party material: its original license, as documented in
+  [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
+
+Each complete Jupyter notebook contains both Apache-2.0 code cells and
+CC-BY-4.0 non-code cells.
+
+NVIDIA names, logos, and trademarks are not licensed for general reuse.
