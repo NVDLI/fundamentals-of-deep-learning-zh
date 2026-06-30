@@ -70,3 +70,14 @@ By making a contribution to this project, I certify that:
     maintained indefinitely and may be redistributed consistent with
     this project or the open source license(s) involved.
 ```
+
+## Licensing of contributions
+
+## Licensing of contributions
+
+- Code files and notebook code cells must be contributed under Apache-2.0.
+- Documentation and notebook non-code cells must be contributed under
+  CC-BY-4.0.
+- Every third-party image, dataset, quotation, or code sample must identify
+  its creator, source URL, exact license, and any modifications.
+- Material with unknown provenance will not be accepted.<D-s>
