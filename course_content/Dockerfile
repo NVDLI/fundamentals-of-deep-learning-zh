@@ -1,6 +1,6 @@
 # PyTorch + CUDA 11.8 + cuDNN 8 — requires NVIDIA GPU + nvidia-container-toolkit on the host
 # Run with: docker run --gpus all ...
-FROM pytorch/pytorch:2.2.0-cuda11.8-cudnn8-runtime
+FROM pytorch/pytorch:2.4.1-cuda11.8-cudnn9-runtime
 
 # Avoid interactive prompts during apt installs
 ENV DEBIAN_FRONTEND=noninteractive
