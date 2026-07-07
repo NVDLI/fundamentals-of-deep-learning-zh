@@ -1,8 +1,8 @@
-# Fundamentals of Deep Learning Course Notebooks
+# 深度学习基础课程 Notebook
 
-This repository contains Jupyter notebooks and environment setup files for a hands-on deep learning course. The notebooks introduce  image classification, convolutional neural networks, data augmentation, model deployment, transfer learning, and natural language processing.
+本仓库包含一门深度学习实践课程的 Jupyter Notebook 及环境配置文件。课程内容涵盖图像分类、卷积神经网络、数据增强、模型部署、迁移学习与自然语言处理。
 
-## Repository Contents
+## 仓库结构
 
 ```text
 .
@@ -25,53 +25,53 @@ This repository contains Jupyter notebooks and environment setup files for a han
 
 ### `Dockerfile`
 
-Builds a JupyterLab environment based on `pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime`. It installs the Python packages needed by the notebooks, copies the contents of `tutorials/` into `/dli/tutorials`, exposes port `8888`, and starts JupyterLab.
+基于 `pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime` 构建 JupyterLab 环境。它会安装 Notebook 所需的 Python 包，将 `tutorials/` 内容复制至 `/dli/tutorials`，暴露端口 `8888`，并启动 JupyterLab。
 
-The Docker image is intended for hosts with an NVIDIA GPU and `nvidia-container-toolkit` installed.
+该 Docker 镜像适用于安装了 NVIDIA GPU 与 `nvidia-container-toolkit` 的主机。
 
 ### `environment/`
 
-Contains environment setup files:
+包含环境配置文件：
 
-- `requirements.txt`: Python dependencies for running the notebooks with `pip`.
-- `entrypoint.sh`: JupyterLab startup script for environments that use a shell entrypoint.
+- `requirements.txt`：使用 `pip` 运行 Notebook 所需的 Python 依赖。
+- `entrypoint.sh`：适用于以 shell 入口点启动的环境的 JupyterLab 启动脚本。
 
 ### `tutorials/`
 
-Contains the course notebooks:
+包含课程 Notebook：
 
-- `00_jupyterlab.ipynb`: JupyterLab introduction and basic workflow.
-- `01_mnist.ipynb`: Image classification with the MNIST handwritten digit dataset.
-- `02_asl.ipynb`: Image classification with an American Sign Language dataset.
-- `03_asl_cnn.ipynb`: Convolutional neural networks for image classification.
-- `04a_asl_augmentation.ipynb`: Data augmentation to improve model generalization.
-- `04b_asl_predictions.ipynb`: Using a trained model to make predictions.
-- `05a_doggy_door.ipynb`: Using pre-trained models.
-- `05b_corgi_door.ipynb`: Transfer learning with a pre-trained model.
-- `06_nlp.ipynb`: Natural language processing with sequence data.
-- `utils.py`: Shared helper code used by the notebooks.
+- `00_jupyterlab.ipynb`：JupyterLab 介绍与基本操作流程。
+- `01_mnist.ipynb`：使用 MNIST 手写数字数据集进行图像分类。
+- `02_asl.ipynb`：使用美国手语数据集进行图像分类。
+- `03_asl_cnn.ipynb`：用于图像分类的卷积神经网络。
+- `04a_asl_augmentation.ipynb`：通过数据增强提升模型泛化能力。
+- `04b_asl_predictions.ipynb`：使用已训练模型进行预测。
+- `05a_doggy_door.ipynb`：使用预训练模型。
+- `05b_corgi_door.ipynb`：基于预训练模型的迁移学习。
+- `06_nlp.ipynb`：序列数据的自然语言处理。
+- `utils.py`：Notebook 共用的辅助代码。
 
-## Run with Docker
+## 使用 Docker 运行
 
-From this directory, build the image:
+在此目录下构建镜像：
 
 ```bash
 docker build -t fdl-course .
 ```
 
-Run JupyterLab:
+运行 JupyterLab：
 
 ```bash
 docker run --rm -it --gpus all -p 8888:8888 fdl-course
 ```
 
-Then open:
+然后打开：
 
 ```text
 http://localhost:8888/lab
 ```
 
-To keep notebook edits on your local machine, mount the `tutorials/` directory when running the container:
+若希望将 Notebook 的修改保存到本地，运行容器时挂载 `tutorials/` 目录：
 
 ```bash
 docker run --rm -it --gpus all -p 8888:8888 \
@@ -79,17 +79,17 @@ docker run --rm -it --gpus all -p 8888:8888 \
   fdl-course
 ```
 
-If port `8888` is already in use, map a different local port:
+如果端口 `8888` 已被占用，可映射至其他本地端口：
 
 ```bash
 docker run --rm -it --gpus all -p 8890:8888 fdl-course
 ```
 
-Then open `http://localhost:8890/lab`.
+然后打开 `http://localhost:8890/lab`。
 
-## Run Locally with `pip`
+## 使用 `pip` 在本地运行
 
-If you do not want to use Docker, create a Python virtual environment and install the dependencies from `environment/requirements.txt`.
+如不使用 Docker，可创建 Python 虚拟环境并从 `environment/requirements.txt` 安装依赖。
 
 ```bash
 python3 -m venv .venv
@@ -98,22 +98,22 @@ python -m pip install --upgrade pip
 python -m pip install -r environment/requirements.txt
 ```
 
-Start JupyterLab from the repository directory:
+从仓库目录启动 JupyterLab：
 
 ```bash
 jupyter lab tutorials
 ```
 
-or simply by running the script on `environment/entrypoint.sh`
+或直接运行 `environment/entrypoint.sh` 脚本：
 
 ```bash
 sh environment/entrypoint.sh
 ```
 
-JupyterLab will print a local URL in the terminal. Open that URL in your browser, then select a notebook from the file browser.
+JupyterLab 启动后将在终端打印本地 URL，在浏览器中打开该 URL，然后在文件浏览器中选择 Notebook 即可。
 
-## Notes
+## 注意事项
 
-- Some notebooks may download datasets or pre-trained model files the first time they run.
-- The Docker setup uses a CUDA-enabled PyTorch image. On machines without an NVIDIA GPU, the local `pip` setup is usually the simpler option.
-- Stop JupyterLab with `Ctrl+C` in the terminal where it is running.
+- 部分 Notebook 在首次运行时可能需要下载数据集或预训练模型文件。
+- Docker 配置使用了支持 CUDA 的 PyTorch 镜像。对于没有 NVIDIA GPU 的机器，本地 `pip` 安装通常是更简便的选择。
+- 在运行 JupyterLab 的终端中按 `Ctrl+C` 可停止服务。
