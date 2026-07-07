@@ -2,7 +2,7 @@
 
 [![在 Brev 上启动](https://img.shields.io/badge/Launch%20on-Brev-76B900)](https://brev.nvidia.com/) [![许可证: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue)](https://creativecommons.org/licenses/by/4.0/) [![许可证](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
 
-《深度学习基础》是 NVIDIA 深度学习学院（DLI）推出的一门开源实践课程，通过交互式 Jupyter Notebook 介绍神经网络、卷积架构与迁移学习。
+《深度学习基础》是 NVIDIA 深度学习培训中心（DLI）推出的一门开源实践课程，通过交互式 Jupyter Notebook 介绍神经网络、卷积架构与迁移学习。
 
 ## 学习成果
 
