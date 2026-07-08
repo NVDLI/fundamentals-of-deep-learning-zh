@@ -1,4 +1,44 @@
-# Third-Party Media Notices
+# Third-Party Notices
+
+This file contains notices for third-party open source software packages
+included in or used by this project, as required for distribution under the
+project's open source license.
+
+---
+
+## Third-Party OSS Dependencies
+
+The following packages are listed in `course_content/environment/requirements.txt`
+and are installed inside the project container. They are not modified or
+redistributed as source; they are used at runtime. License texts are available
+from each project's official repository.
+
+| Package | Version | License | Source |
+|---------|---------|---------|--------|
+| boto3 | 1.34.104 | Apache-2.0 | https://github.com/boto/boto3 |
+| datasets | 5.0.0 | Apache-2.0 | https://github.com/huggingface/datasets |
+| huggingface_hub | 1.21.0 | Apache-2.0 | https://github.com/huggingface/huggingface_hub |
+| kagglehub | 1.0.2 | Apache-2.0 | https://github.com/Kaggle/kagglehub |
+| matplotlib | 3.8.4 | PSF-based (matplotlib License) | https://github.com/matplotlib/matplotlib |
+| opencv-python | 4.9.0.80 | Apache-2.0 | https://github.com/opencv/opencv-python |
+| pandas | 2.3.3 | BSD-3-Clause | https://github.com/pandas-dev/pandas |
+| sentencepiece | 0.2.1 | Apache-2.0 | https://github.com/google/sentencepiece |
+| sacremoses | 0.1.1 | MIT | https://github.com/alvations/sacremoses |
+| tables | 3.9.2 | BSD-2-Clause | https://github.com/PyTables/PyTables |
+| transformers | 5.12.1 | Apache-2.0 | https://github.com/huggingface/transformers |
+| testbook | 0.4.2 | BSD-3-Clause | https://github.com/nteract/testbook |
+| tqdm | 4.66.3 | MIT AND MPL-2.0 | https://github.com/tqdm/tqdm |
+| requests | 2.32.2 | Apache-2.0 | https://github.com/psf/requests |
+| regex | 2026.6.28 | Apache-2.0 | https://github.com/mrabarnett/mrab-regex |
+
+> **Note:** The PyTorch base image (`pytorch/pytorch:2.4.1-cuda11.8-cudnn9-runtime`)
+> is provided by the PyTorch project under the BSD-3-Clause license and by NVIDIA
+> under the NVIDIA Deep Learning Container License. It is not redistributed by this
+> project; users pull it directly from Docker Hub.
+
+---
+
+## Third-Party Media Notices
 
 ## Microsoft 365 Premium Creative Content
 

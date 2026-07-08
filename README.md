@@ -93,6 +93,7 @@ docker build -t fdl-app . && docker run -d -p 8888:8888 --name fdl-container --g
 - 第三方材料：其原始许可证，详见
   [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 
-每个完整的 Jupyter Notebook 同时包含 Apache-2.0 代码单元格和 CC-BY-4.0 非代码单元格。
+每个完整的 Jupyter Notebook 采用双重许可：代码单元格遵循 Apache-2.0，非代码单元格遵循 CC-BY-4.0。合并双重许可条款详见
+[LICENSES/CC-BY-4.0-Apache2_Dual_License.txt](LICENSES/CC-BY-4.0-Apache2_Dual_License.txt)。
 
 NVIDIA 的名称、徽标和商标不授权一般性重复使用。
