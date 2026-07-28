@@ -110,12 +110,12 @@ from the MNIST Database of Handwritten Digits.
 
 CC BY 4.0 covers NVIDIA's selection, arrangement, and presentation.
 
-## Penny  and brow_bear within the Corgi dataset
+## Penny and brown_bear within the Corgi dataset
 
 Files:
 
 - `course_content/tutorials/images/Penny.jpg`
-- `course_content/tutorials/images/brown_bear.jpg`
+- `course_content/tutorials/data/doggy_door_images/brown_bear.jpg`
 
 - Creator/licensor: Danielle Detering 
 - Source: https://www.kaggle.com/datasets/danielledetering/penny-the-corgi
