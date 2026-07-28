@@ -65,12 +65,14 @@ path = [
     "course_content/tutorials/images/Penny.jpg",
     "course_content/tutorials/data/doggy_door_images/brown_bear.jpg"
 ]
+SPDX-FileCopyrightText = "Danielle Detering"
 SPDX-FileContributor = "Danielle Detering"
 SPDX-License-Identifier = "CC-BY-4.0"
 SPDX-FileComment = "Donated by the creator from the Penny the Corgi dataset: https://www.kaggle.com/datasets/danielledetering/penny-the-corgi."
 
 [[annotations]]
 path = "course_content/tutorials/data/doggy_door_images/sleepy_cat.jpg"
+SPDX-FileCopyrightText = "Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved."
 SPDX-FileContributor = "Vadim Kudlay"
 SPDX-License-Identifier = "CC-BY-4.0"
-SPDX-FileComment = "Original photograph supplied by an NVIDIA employee with authorization for distribution under CC BY 4.0."
+SPDX-FileComment = "Original photograph taken by Vadim Kudlay (NVIDIA employee) and supplied with authorization for distribution under CC BY 4.0."

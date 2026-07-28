@@ -20,11 +20,11 @@ from each project's official repository.
 | huggingface_hub | 1.21.0 | Apache-2.0 | https://github.com/huggingface/huggingface_hub |
 | kagglehub | 1.0.2 | Apache-2.0 | https://github.com/Kaggle/kagglehub |
 | matplotlib | 3.8.4 | PSF-based (matplotlib License) | https://github.com/matplotlib/matplotlib |
-| opencv-python | 4.9.0.80 | Apache-2.0 | https://github.com/opencv/opencv-python |
+| opencv-python | 4.9.0.80 | MIT (PyPI wrapper), Apache-2.0 (bundled OpenCV) | https://github.com/opencv/opencv-python |
 | pandas | 2.3.3 | BSD-3-Clause | https://github.com/pandas-dev/pandas |
 | sentencepiece | 0.2.1 | Apache-2.0 | https://github.com/google/sentencepiece |
 | sacremoses | 0.1.1 | MIT | https://github.com/alvations/sacremoses |
-| tables | 3.9.2 | BSD-2-Clause | https://github.com/PyTables/PyTables |
+| tables | 3.9.2 | BSD-3-Clause | https://github.com/PyTables/PyTables |
 | transformers | 5.12.1 | Apache-2.0 | https://github.com/huggingface/transformers |
 | testbook | 0.4.2 | BSD-3-Clause | https://github.com/nteract/testbook |
 | tqdm | 4.66.3 | MIT AND MPL-2.0 | https://github.com/tqdm/tqdm |
@@ -129,8 +129,9 @@ File:
 
 - `course_content/tutorials/data/doggy_door_images/sleepy_cat.jpg`
 
-- Creator/licensor: NVIDIA Employee
-- Source: Original photograph supplied to NVIDIA
+- Creator/licensor: Vadim Kudlay (NVIDIA employee)
+- Copyright: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+- Source: Original photograph taken by Vadim Kudlay and supplied with authorization for distribution under CC BY 4.0.
 - License: Creative Commons Attribution 4.0 International
 - License: https://creativecommons.org/licenses/by/4.0/
 - Modifications: Incorporated into the course materials.

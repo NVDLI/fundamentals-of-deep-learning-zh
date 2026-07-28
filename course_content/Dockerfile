@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+
 # PyTorch + CUDA 11.8 + cuDNN 8 — requires NVIDIA GPU + nvidia-container-toolkit on the host
 # Run with: docker run --gpus all ...
 FROM pytorch/pytorch:2.4.1-cuda11.8-cudnn9-runtime
