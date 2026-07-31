@@ -18,12 +18,12 @@
 
 | # | 模块 | 幻灯片 | Notebook |
 |---|---|----------|--------|
-| 01 | 深度学习简介 | [slides_01.pptx](./course_content/slides/part1-v2.1.pptx) | [01_mnist.ipynb](./course_content/tutorials/01_mnist.ipynb) |
-| 02 | 神经网络的训练方式 | [slides_02.pptx](./course_content/slides/part2-v2.pptx) | [02_asl.ipynb](./course_content/tutorials/02_asl.ipynb) |
-| 03 | 卷积神经网络 | [slides_03.pptx](./course_content/slides/part3-v2.pptx) | [03_asl_cnn.ipynb](./course_content/tutorials/03_asl_cnn.ipynb) |
-| 04 | 数据增强与模型部署 | [slides_04.pptx](./course_content/slides/part4-v2.pptx) | [04a_asl_augmentation.ipynb](./course_content/tutorials/04a_asl_augmentation.ipynb) <br> [04b_asl_predictions.ipynb](./course_content/tutorials/04b_asl_predictions.ipynb) |
-| 05 | 预训练模型 | [slides_05.pptx](./course_content/slides/part5-v2.pptx) | [05a_doggy_door.ipynb](./course_content/tutorials/05a_doggy_door.ipynb) <br> [05b_corgi_door.ipynb](./course_content/tutorials/05b_corgi_door.ipynb) |
-| 06 | 高级架构 | [slides_06.pptx](./course_content/slides/part6-v2.pptx) | [06_nlp.ipynb](./course_content/tutorials/06_nlp.ipynb)  |
+| 01 | 深度学习简介 | [slides_01.pptx](./course_content/slides/part1.pptx) | [01_mnist.ipynb](./course_content/tutorials/01_mnist.ipynb) |
+| 02 | 神经网络的训练方式 | [slides_02.pptx](./course_content/slides/part2.pptx) | [02_asl.ipynb](./course_content/tutorials/02_asl.ipynb) |
+| 03 | 卷积神经网络 | [slides_03.pptx](./course_content/slides/part3.pptx) | [03_asl_cnn.ipynb](./course_content/tutorials/03_asl_cnn.ipynb) |
+| 04 | 数据增强与模型部署 | [slides_04.pptx](./course_content/slides/part4.pptx) | [04a_asl_augmentation.ipynb](./course_content/tutorials/04a_asl_augmentation.ipynb) <br> [04b_asl_predictions.ipynb](./course_content/tutorials/04b_asl_predictions.ipynb) |
+| 05 | 预训练模型 | [slides_05.pptx](./course_content/slides/part5.pptx) | [05a_doggy_door.ipynb](./course_content/tutorials/05a_doggy_door.ipynb) <br> [05b_corgi_door.ipynb](./course_content/tutorials/05b_corgi_door.ipynb) |
+| 06 | 高级架构 | [slides_06.pptx](./course_content/slides/part6.pptx) | [06_nlp.ipynb](./course_content/tutorials/06_nlp.ipynb)  |
 
 
 ## 使用方法
