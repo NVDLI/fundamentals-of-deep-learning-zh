@@ -30,7 +30,7 @@
 
 ### 快速开始
 
-#### 1. 使用 Brev 启动（推荐）
+#### 1. 使用 Brev 启动
 
 🌟 [在 NVIDIA Brev 上启动本课程](https://brev.nvidia.com/)
 
