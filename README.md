@@ -30,17 +30,7 @@
 
 ### 快速开始
 
-#### 1. 使用 Brev 启动
-
-🌟 [在 NVIDIA Brev 上启动本课程](https://brev.nvidia.com/)
-
-1. 点击上方的 **Launch on Brev** 按钮（或本 README 顶部的徽章）。
-2. 登录或免费注册 NVIDIA Brev 账号。
-3. 选择 GPU 实例——NVIDIA T4 或 L4 已足够运行所有五个实验。
-4. 点击 **Deploy**。环境将在约 2 分钟内准备就绪，CUDA、Python 及所有依赖均已预装。
-5. 在 Brev 控制台打开 JupyterLab，导航至 `course_content/tutorials/` 目录。
-
-#### 2. 克隆并在本地运行
+#### 1. 克隆并在本地运行
 
 ```bash
 git clone https://github.com/NVDLI/fundamentals-of-deep-learning.git
@@ -56,7 +46,7 @@ jupyter lab
 
 然后在浏览器中打开 <http://localhost:8888>，导航至 `tutorials/` 目录。
 
-#### 3. 使用 Docker 运行
+#### 2. 使用 Docker 运行
 
 使用提供的 `Dockerfile` 部署内容：
 
@@ -65,6 +55,16 @@ docker build -t fdl-app . && docker run -d -p 8888:8888 --name fdl-container --g
 ```
 
 然后在浏览器中打开 <http://localhost:8888>，导航至 `tutorials/` 目录。
+
+#### 3. 使用 Brev 启动
+
+🌟 [在 NVIDIA Brev 上启动本课程](https://brev.nvidia.com/)
+
+1. 点击上方的 **Launch on Brev** 按钮（或本 README 顶部的徽章）。
+2. 登录或免费注册 NVIDIA Brev 账号。
+3. 选择 GPU 实例——NVIDIA T4 或 L4 已足够运行所有五个实验。
+4. 点击 **Deploy**。环境将在约 2 分钟内准备就绪，CUDA、Python 及所有依赖均已预装。
+5. 在 Brev 控制台打开 JupyterLab，导航至 `course_content/tutorials/` 目录。
 
 ## 贡献
 
