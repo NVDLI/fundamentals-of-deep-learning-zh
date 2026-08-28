@@ -114,9 +114,12 @@ docker rm -f fdl-container     # 彻底删除
   `'sm_121' is not a recognized processor for this target`。上方 `docker run` 命令已包含的
   `-e TORCHDYNAMO_DISABLE=1` 会让其静默降级为不编译，无需修改 Notebook；详见第二步下方说明。
 - 06_nlp.ipynb 会从 HuggingFace 下载 BERT 模型（约 1.3 GB）；05a/05b 会从
-  `download.pytorch.org` 下载 VGG16 预训练权重（约 528 MB）；05b_corgi_door.ipynb 通过
-  `kagglehub` 下载数据集，可能需要 Kaggle 账号凭据。请确保 DGX Spark 可以访问公网，
-  或提前准备好相应的凭据/镜像文件。
+  `download.pytorch.org` 下载 VGG16 预训练权重（约 528 MB）。请确保 DGX Spark 可以访问公网。
+- 05b_corgi_door.ipynb 通过 `kagglehub` 下载数据集（约 200 MB），**无需 Kaggle 账号凭据**。
+  但 Kaggle 数据集托管于 Google Cloud Storage，从网络受限地区（如中国大陆）访问可能被严重限速
+  （实测约 56 kB/s，全程耗时约 1 小时），且下载中断后不支持断点续传——若中途失败，需先清空
+  `data/datasets/` 目录（位于 `course_content/tutorials/data/datasets/`）再重新运行该单元格，
+  否则可能读取到不完整的缓存文件。
 - 若所在网络访问 GitHub、HuggingFace 或 PyPI 不稳定（例如中国大陆网络环境），可在
   `docker build` 时追加 `--build-arg PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple`，
   并在 `docker run` 时追加 `-e HF_ENDPOINT=https://hf-mirror.com`；如遇 Docker 容器内 DNS
