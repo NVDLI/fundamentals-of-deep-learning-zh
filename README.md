@@ -111,11 +111,18 @@ CMD ["jupyter", "lab", \
 EOF
 ```
 
-> **为什么是 `25.10-py3`？** NGC PyTorch 镜像从 25.10 版本起才为 GB10（sm_121）提供完整支持，
-> 包括 `torch.compile` 所依赖的 Triton 编译后端。低于该版本的镜像（例如 24.08、25.01、25.09）在
-> `import torch` 与常规张量运算时看起来正常，但一旦调用 `torch.compile()`（本课程 01、02、03、04a
-> 四个 Notebook 中均有使用）会报错 `'sm_121' is not a recognized processor for this target`
-> 并导致训练失败。
+> **为什么是 `25.10-py3`？** NGC PyTorch 镜像从 25.10 版本起才开始为 GB10（sm_121）提供支持。
+> 低于该版本的镜像（例如 24.08、25.01、25.09）在 `import torch` 与常规张量运算（eager 模式）时
+> 看起来正常，但一旦调用 `torch.compile()`（本课程 01、02、03、04a 四个 Notebook 中均有使用）
+> 会报错 `'sm_121' is not a recognized processor for this target` 并导致训练失败。
+>
+> **`torch.compile()` 在 GB10 上目前仍可能报错。** 即使使用 `25.10-py3`，其内置的 Triton
+> 编译后端对 sm_121 的支持也可能不完整，因此上述报错仍可能出现——这是 GB10（Blackwell 架构）
+> 生态适配尚不成熟导致的已知限制，而非本仓库的配置问题。上方 `docker run` 命令中的
+> `-e TORCHDYNAMO_DISABLE=1` 会让所有 `torch.compile(...)` 调用静默降级为直接返回原模型
+> （即不进行任何编译优化），四个 Notebook 无需任何修改即可正常运行。这只会让训练速度略慢
+> （本课程模型很小，几乎无感知），不影响正确性。若在其他支持 `torch.compile` 的 GPU（如
+> RTX 3500 等消费级/工作站显卡）上运行，请不要设置该环境变量，以便获得完整的编译加速效果。
 >
 > **为什么额外加装 `numpy<2`？** NGC 镜像自带的 PyTorch 编译时链接的是 NumPy 1.x。安装
 > `requirements.txt` 中的 pandas / matplotlib / opencv-python 等依赖会把 NumPy 升级到 2.x，
@@ -139,6 +146,7 @@ docker run -d \
   --gpus all \
   --shm-size=2g \
   -p 8888:8888 \
+  -e TORCHDYNAMO_DISABLE=1 \
   -v "$(pwd)":/dli \
   fdl-app
 ```
@@ -170,6 +178,9 @@ docker rm -f fdl-container     # 彻底删除
 
 **已知问题：**
 
+- `torch.compile()`（01、02、03、04a 四个 Notebook 均有使用）在 GB10 上可能报错
+  `'sm_121' is not a recognized processor for this target`。上方 `docker run` 命令已包含的
+  `-e TORCHDYNAMO_DISABLE=1` 会让其静默降级为不编译，无需修改 Notebook；详见第二步下方说明。
 - 06_nlp.ipynb 会从 HuggingFace 下载 BERT 模型（约 1.3 GB）；05a/05b 会从
   `download.pytorch.org` 下载 VGG16 预训练权重（约 528 MB）；05b_corgi_door.ipynb 通过
   `kagglehub` 下载数据集，可能需要 Kaggle 账号凭据。请确保 DGX Spark 可以访问公网，
@@ -180,6 +191,10 @@ docker rm -f fdl-container     # 彻底删除
   解析失败（`Name or service not known`），需在宿主机 `/etc/docker/daemon.json` 中显式配置
   `"dns": ["8.8.8.8", "114.114.114.114"]` 后执行 `sudo systemctl restart docker`
   （注意 `--network host` 无法解决此问题，因为它会直接复用宿主机可能存在问题的 DNS 解析器）。
+- 即使已设置 `HF_ENDPOINT` 镜像，在网络不稳定的环境下下载数据集（如 02_asl.ipynb 中约 300MB 的
+  ASL 数据集）仍可能显示多次 `Error while downloading ... Trying to resume download...`。这是
+  `huggingface_hub` 自带的断点续传重试机制，属正常现象，请耐心等待其自动完成，无需手动干预；
+  整个下载过程可能耗时 15–20 分钟。
 
 ## 贡献
 
