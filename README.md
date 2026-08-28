@@ -48,6 +48,11 @@ jupyter lab
 
 #### 2. 使用 Docker 运行
 
+```bash
+git clone https://github.com/NVDLI/fundamentals-of-deep-learning-zh.git
+cd fundamentals-of-deep-learning-zh/course_content
+```
+
 使用提供的 `Dockerfile` 部署内容：
 
 ```bash
