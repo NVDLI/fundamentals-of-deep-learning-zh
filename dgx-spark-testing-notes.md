@@ -17,7 +17,7 @@
 | 7 | 容器内 Notebook 内容陈旧，`git pull` 后仍不更新 | 容器重建时遗漏了 `-v` 绑定挂载参数，实际运行的是镜像构建时刻的快照（`Mounts: []`） | 使用 `-v <宿主机路径>:/dli` 重新创建容器 | ✅ 已修复 |
 | 8 | `huggingface_hub` 报 `Network is unreachable` | 两个叠加原因：(a) Docker 默认网桥无 IPv6 路由（与地域无关，Docker 通用限制）；(b) 从中国大陆网络访问 `huggingface.co` 的 IPv4 连接被静默丢弃 | `-e HF_ENDPOINT=https://hf-mirror.com` | ✅ 已修复 |
 | 9 | ASL 数据集下载缓慢，偶发 `IncompleteRead` | `huggingface_hub` 的 Xet 存储后端从美国节点提供该文件，自带断点续传重试机制，但耗时较长（15–20 分钟） | 已在 `DGX_SPARK.md` 中记录为预期行为，无需人工干预 | ✅ 已记录 |
-| 10 | Kaggle（05b）数据集下载极慢（约 56 kB/s，耗时约 1 小时），中断后无断点续传 | Kaggle 文件托管于 Google Cloud Storage，从中国大陆网络访问受到严重限速；`download_kagglehub_dataset()` 本身不含重试/续传逻辑，中断后需清空 `data/datasets/` 重新下载 | 已确认最终可下载成功（非凭据问题，与 `DGX_SPARK.md` 当前文字描述不符） | ⏳ **待办**——`DGX_SPARK.md` 已知问题列表中仍写着"可能需要 Kaggle 账号凭据"，需改为准确描述（无需凭据，但需预留约 1 小时且不支持断点续传） |
+| 10 | Kaggle（05b）数据集下载极慢（约 56 kB/s，耗时约 1 小时），中断后无断点续传 | Kaggle 文件托管于 Google Cloud Storage，从中国大陆网络访问受到严重限速；`download_kagglehub_dataset()` 本身不含重试/续传逻辑，中断后需清空 `data/datasets/` 重新下载 | 已确认最终可下载成功（非凭据问题）；`DGX_SPARK.md` 已知问题列表已更正为准确描述 | ✅ 已修复并推送 |
 
 ## 二、Notebook 内容缺陷（中文版）
 
