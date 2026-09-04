@@ -73,11 +73,6 @@ docker build -t fdl-app . && docker run -d -p 8888:8888 --name fdl-container --g
 4. 点击 **Deploy**。环境将在约 2 分钟内准备就绪，CUDA、Python 及所有依赖均已预装。
 5. 在 Brev 控制台打开 JupyterLab，导航至 `course_content/tutorials/` 目录。
 
-#### 4. 在 NVIDIA DGX Spark 上运行
-
-DGX Spark（ARM64 + Blackwell GB10 架构）需要专门的构建流程，与上述平台不同。详细步骤、已知问题及排查方法请参见
-[DGX_SPARK.md](DGX_SPARK.md)。
-
 ## 贡献
 
 我们欢迎社区贡献。贡献步骤如下：
