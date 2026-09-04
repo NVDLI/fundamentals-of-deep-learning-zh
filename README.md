@@ -4,6 +4,8 @@
 
 《深度学习基础》是 NVIDIA 深度学习培训中心（DLI）推出的一门开源实践课程，通过交互式 Jupyter Notebook 介绍神经网络、卷积架构与迁移学习。
 
+访问[NVIDIA 培训和认证中文官网](https://www.nvidia.cn/training/)，探索全系列课程、培训机会及 NVIDIA 认证项目，加速 AI 技能进阶与职业发展。
+
 ## 学习成果
 
 完成本课程的实验后，学员将能够：
