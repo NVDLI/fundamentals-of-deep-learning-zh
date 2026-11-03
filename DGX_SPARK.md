@@ -57,7 +57,7 @@ EOF
 > RTX 3500 等消费级/工作站显卡）上运行，请不要设置该环境变量，以便获得完整的编译加速效果。
 >
 > **为什么额外加装 `numpy<2`？** NGC 镜像自带的 PyTorch 编译时链接的是 NumPy 1.x。安装
-> `requirements.txt` 中的 pandas / matplotlib / opencv-python 等依赖会把 NumPy 升级到 2.x，
+> `requirements.txt` 中的 pandas / matplotlib 等依赖会把 NumPy 升级到 2.x，
 > 导致 PyTorch 的 NumPy 桥接失效（报错 `A module that was compiled using NumPy 1.x cannot be
 > run in NumPy 2.2.6` 及 `Failed to initialize NumPy: _ARRAY_API not found`），因此需要在同一层
 > 显式钉住 NumPy 主版本。

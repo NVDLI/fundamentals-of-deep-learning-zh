@@ -4,7 +4,7 @@ We welcome contributions to this project. This is a dual-licensed project
 (documentation/content under CC-BY-4.0 and source code under Apache-2.0), so it
 uses the **Developer Certificate of Origin (DCO)** — never a CLA.
 
-## Signing Your Work
+## Signing Off Your Work
 
 We require that all contributors "sign-off" on their commits. This certifies that
 the contribution is your original work, or you have rights to submit it under the
@@ -36,9 +36,6 @@ Developer Certificate of Origin
 Version 1.1
 
 Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
-1 Letterman Drive
-Suite D4700
-San Francisco, CA, 94129
 
 Everyone is permitted to copy and distribute verbatim copies of this
 license document, but changing it is not allowed.
