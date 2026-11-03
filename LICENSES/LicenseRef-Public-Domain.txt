@@ -1,5 +1,9 @@
 Public-domain declaration for the ASL alphabet image
 
+Covered file in this repository:
+  course_content/tutorials/images/asl.png
+  (original file name: Asl_alphabet_gallaudet.png; renamed only, image content not modified)
+
 The source file (https://commons.wikimedia.org/wiki/File:Asl_alphabet_gallaudet.png)
 is marked with the Creative Commons Public Domain Mark 1.0
 (https://creativecommons.org/publicdomain/mark/1.0/), indicating that the work

@@ -25,7 +25,7 @@
 
 ### `Dockerfile`
 
-基于 `pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime` 构建 JupyterLab 环境。它会安装 Notebook 所需的 Python 包，将 `tutorials/` 内容复制至 `/dli/tutorials`，暴露端口 `8888`，并启动 JupyterLab。
+基于 `pytorch/pytorch:2.4.1-cuda11.8-cudnn9-runtime`（由用户从 Docker Hub 拉取）构建 JupyterLab 环境。它会安装 Notebook 所需的 Python 包（含固定版本的 JupyterLab 4.2.0 与 ipywidgets 8.1.2），将 `tutorials/` 内容复制至 `/dli/tutorials`，暴露端口 `8888`，并启动 JupyterLab。
 
 该 Docker 镜像适用于安装了 NVIDIA GPU 与 `nvidia-container-toolkit` 的主机。
 
