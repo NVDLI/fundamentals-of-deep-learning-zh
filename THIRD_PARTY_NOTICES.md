@@ -231,3 +231,173 @@ File:
 - License: Creative Commons Attribution 4.0 International (`LICENSES/CC-BY-4.0.txt`)
 - License URL: https://creativecommons.org/licenses/by/4.0/
 - Modifications: Incorporated into the course materials.
+
+---
+
+## 7. Copyright and license notices for third-party software
+
+This section follows the NVIDIA OSS notices-file format: one entry per
+third-party software component listed in Sections 1 and 2.1, giving the
+copyright holder, the license, a link to the license text, and the copyright
+statement as published in the component's own license or notice file. The
+copyright statements below are reproduced from each project's upstream
+`LICENSE`/`NOTICE` file (at the pinned release tag where one exists). The full
+license texts are linked; Apache-2.0 and CC-BY-4.0 are also in `LICENSES/`.
+
+### Python packages declared by this repository (Section 1)
+
+**Copyright Amazon.com, Inc. - Apache-2.0 License** (boto3 1.34.104)
+License Text (https://spdx.org/licenses/Apache-2.0.html)
+
+    boto3
+    Copyright 2013-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+**Copyright The HuggingFace Datasets Authors - Apache-2.0 License** (datasets 5.0.0)
+License Text (https://spdx.org/licenses/Apache-2.0.html)
+
+    Copyright 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.
+
+**Copyright The HuggingFace Inc. team - Apache-2.0 License** (huggingface_hub 1.21.0)
+License Text (https://spdx.org/licenses/Apache-2.0.html)
+
+    Copyright 2019-present, the HuggingFace Inc. team.
+
+**Copyright Project Jupyter Contributors - BSD 3-clause License** (ipywidgets 8.1.2)
+License Text (https://spdx.org/licenses/BSD-3-Clause.html)
+
+    Copyright (c) 2015 Project Jupyter Contributors
+    All rights reserved.
+
+**Copyright Project Jupyter Contributors - BSD 3-clause License** (jupyterlab 4.2.0)
+License Text (https://spdx.org/licenses/BSD-3-Clause.html)
+
+    Copyright (c) 2015-2022 Project Jupyter Contributors
+    All rights reserved.
+
+**Copyright Kaggle Inc - Apache-2.0 License** (kagglehub 1.0.2)
+License Text (https://spdx.org/licenses/Apache-2.0.html)
+
+    Copyright 2018 Kaggle Inc
+
+**Copyright Matplotlib Development Team - Matplotlib License (PSF-based)** (matplotlib 3.8.4)
+License Text (https://matplotlib.org/stable/project/license.html)
+
+    Copyright (c) 2012- Matplotlib Development Team; All Rights Reserved
+    Copyright (c) 2002-2011 John D. Hunter; All Rights Reserved
+
+**Copyright AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team - BSD 3-clause License** (pandas 2.3.3)
+License Text (https://spdx.org/licenses/BSD-3-Clause.html)
+
+    Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team
+    All rights reserved.
+    Copyright (c) 2011-2023, Open source contributors.
+
+**Copyright Matthew Barnett; Secret Labs AB - Apache-2.0 and CNRI-Python Licenses** (regex 2026.6.28)
+License Text (https://spdx.org/licenses/Apache-2.0.html, https://spdx.org/licenses/CNRI-Python.html)
+
+    This work was derived from the 're' module of CPython 2.6 and CPython 3.1,
+    copyright (c) 1998-2001 by Secret Labs AB and licensed under CNRI's Python 1.6
+    license.
+    All additions and alterations are licensed under the Apache 2.0 License.
+    Copyright 2020 Matthew Barnett
+
+**Copyright Kenneth Reitz - Apache-2.0 License** (requests 2.32.2)
+License Text (https://spdx.org/licenses/Apache-2.0.html)
+
+    Requests
+    Copyright 2019 Kenneth Reitz
+
+**Copyright alvations - MIT License** (sacremoses 0.1.1)
+License Text (https://spdx.org/licenses/MIT.html)
+
+    Copyright (c) 2020 alvations
+
+**Copyright Google Inc. - Apache-2.0 License** (sentencepiece 0.2.1)
+License Text (https://spdx.org/licenses/Apache-2.0.html)
+
+    Copyright 2016 Google Inc.
+
+**Copyright PyTables maintainers - BSD 3-clause License** (tables 3.9.2)
+License Text (https://spdx.org/licenses/BSD-3-Clause.html)
+
+    Copyright (c) 2002-2004 by Francesc Alted
+    Copyright (c) 2005-2007 by Carabos Coop. V.
+    Copyright (c) 2008-2010 by Francesc Alted
+    Copyright (c) 2011-2021 by PyTables maintainers
+    All rights reserved.
+
+**Copyright nteract - BSD 3-clause License** (testbook 0.4.2)
+License Text (https://spdx.org/licenses/BSD-3-Clause.html)
+
+    Copyright (c) 2020, nteract
+    All rights reserved.
+
+**Copyright Casper da Costa-Luis, Google Inc., Noam Yorav-Raphael - MPL-2.0 and MIT Licenses** (tqdm 4.66.3)
+License Text (https://spdx.org/licenses/MPL-2.0.html, https://spdx.org/licenses/MIT.html)
+
+    MPL-2.0 2015-2024 (c) Casper da Costa-Luis
+    MIT 2016 (c) [PR #96] on behalf of Google Inc.
+    MIT 2013 (c) Noam Yorav-Raphael, original author.
+    Copyright (c) 2013 noamraph
+
+**Copyright The Hugging Face team - Apache-2.0 License** (transformers 5.12.1)
+License Text (https://spdx.org/licenses/Apache-2.0.html)
+
+    Copyright 2018- The Hugging Face team. All rights reserved.
+
+**Copyright IPython Development Team - BSD 3-clause License** (IPython, installed as a dependency of jupyterlab and ipywidgets)
+License Text (https://spdx.org/licenses/BSD-3-Clause.html)
+
+    Copyright (c) 2008-Present, IPython Development Team
+    Copyright (c) 2001-2007, Fernando Perez <fernando.perez@colorado.edu>
+    Copyright (c) 2001, Janko Hauser <jhauser@zscout.de>
+    Copyright (c) 2001, Nathaniel Gray <n8gray@caltech.edu>
+    All rights reserved.
+
+### Packages supplied by the default base image (Section 2.1)
+
+These are not installed or pinned by this repository; they are listed because
+the course code imports them directly.
+
+**Copyright Facebook, Inc. and contributors - BSD 3-clause License** (torch / PyTorch 2.4.1)
+License Text (https://spdx.org/licenses/BSD-3-Clause.html)
+
+    Copyright (c) 2016-     Facebook, Inc            (Adam Paszke)
+    Copyright (c) 2014-     Facebook, Inc            (Soumith Chintala)
+    Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+    Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+    Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+    Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+    Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+    Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+    (see the PyTorch LICENSE file for the complete list of contributors)
+
+**Copyright Soumith Chintala - BSD 3-clause License** (torchvision 0.19.1)
+License Text (https://spdx.org/licenses/BSD-3-Clause.html)
+
+    Copyright (c) Soumith Chintala 2016,
+    All rights reserved.
+
+**Copyright NumPy Developers - BSD 3-clause License** (numpy)
+License Text (https://spdx.org/licenses/BSD-3-Clause.html)
+
+    Copyright (c) 2005-2026, NumPy Developers.
+    All rights reserved.
+
+**Copyright Secret Labs AB, Fredrik Lundh, Jeffrey A. Clark and contributors - HPND / MIT-CMU License** (Pillow)
+License Text (https://spdx.org/licenses/HPND.html, https://spdx.org/licenses/MIT-CMU.html)
+
+    Copyright © 1997-2011 by Secret Labs AB
+    Copyright © 1995-2011 by Fredrik Lundh and contributors
+    Copyright © 2010 by Jeffrey 'Alex' Clark and contributors
+
+**Copyright Python Software Foundation - PSF-2.0 License** (Python / CPython)
+License Text (https://spdx.org/licenses/PSF-2.0.html)
+
+    Copyright (c) 2001 Python Software Foundation; All Rights Reserved
+    (and subsequent years; see the CPython LICENSE file)
+
+The NVIDIA CUDA and cuDNN runtime libraries in the default base image are
+NVIDIA components and are subject to NVIDIA's license terms. The DGX Spark
+base image (`nvcr.io/nvidia/pytorch:25.10-py3`, Section 2.2) ships its own
+license and third-party notices inside the container.
