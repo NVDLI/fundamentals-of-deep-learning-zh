@@ -114,10 +114,10 @@ in this repository.
 
 | Item | Used in | Source | License / terms |
 |------|---------|--------|-----------------|
-| MNIST handwritten digits | 01_mnist (`torchvision.datasets.MNIST`) | http://yann.lecun.com/exdb/mnist/ | See the dataset page (commonly cited as CC BY-SA 3.0) |
+| MNIST handwritten digits | 01_mnist (`torchvision.datasets.MNIST`) | Dataset page: http://yann.lecun.com/exdb/mnist/; downloaded at runtime through `torchvision.datasets.MNIST` | Not included in this repository. The dataset page should be reviewed for the applicable terms; MNIST is commonly cited as CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). |
 | ASL-HG dataset | 02_asl, 03_asl_cnn, 04a_asl_augmentation (`data/data.py`) | https://huggingface.co/datasets/juanjodurillo/asl-hg (record: https://doi.org/10.17632/j4y5w2c8w9.1) | CC-BY-4.0 |
 | Penny the Corgi dataset | 05b_corgi_door (`kagglehub`) | https://www.kaggle.com/datasets/danielledetering/penny-the-corgi | CC-BY-4.0 |
-| VGG16 ImageNet weights (`VGG16_Weights.DEFAULT`) | 05a_doggy_door, 05b_corgi_door (torchvision) | https://download.pytorch.org/models/ | See the torchvision model documentation |
+| VGG16 ImageNet weights (`VGG16_Weights.DEFAULT`) | 05a_doggy_door, 05b_corgi_door (torchvision) | Model documentation: https://pytorch.org/vision/stable/models/generated/torchvision.models.vgg16.html; weights download area: https://download.pytorch.org/models/ | Not included in this repository. The weights are downloaded at runtime by torchvision; use is subject to the torchvision model documentation and any applicable terms for the pretrained ImageNet weights. |
 | bert-base-cased | 06_nlp (transformers) | https://huggingface.co/google-bert/bert-base-cased | Apache-2.0 |
 | bert-large-uncased-whole-word-masking-finetuned-squad | 06_nlp (transformers) | https://huggingface.co/google-bert/bert-large-uncased-whole-word-masking-finetuned-squad | Apache-2.0 |
 
