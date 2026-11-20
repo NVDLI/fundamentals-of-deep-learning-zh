@@ -37,7 +37,7 @@ Installed by `course_content/Dockerfile`, either from
 | datasets | 5.0.0 | Apache-2.0 | requirements.txt | https://github.com/huggingface/datasets |
 | huggingface_hub | 1.21.0 | Apache-2.0 | requirements.txt | https://github.com/huggingface/huggingface_hub |
 | ipywidgets | 8.1.2 | BSD-3-Clause | Dockerfile | https://github.com/jupyter-widgets/ipywidgets |
-| jupyterlab | 4.2.0 | BSD-3-Clause | Dockerfile | https://github.com/jupyterlab/jupyterlab |
+| jupyterlab | 4.6.2 | BSD-3-Clause | Dockerfile | https://github.com/jupyterlab/jupyterlab |
 | kagglehub | 1.0.2 | Apache-2.0 | requirements.txt | https://github.com/Kaggle/kagglehub |
 | matplotlib | 3.8.4 | Matplotlib License (PSF-based) | requirements.txt | https://github.com/matplotlib/matplotlib |
 | pandas | 2.3.3 | BSD-3-Clause | requirements.txt | https://github.com/pandas-dev/pandas |
@@ -48,7 +48,7 @@ Installed by `course_content/Dockerfile`, either from
 | tables | 3.9.2 | BSD-3-Clause | requirements.txt | https://github.com/PyTables/PyTables |
 | testbook | 0.4.2 | BSD-3-Clause | requirements.txt | https://github.com/nteract/testbook |
 | tqdm | 4.66.3 | MPL-2.0 AND MIT | requirements.txt | https://github.com/tqdm/tqdm |
-| transformers | 5.12.1 | Apache-2.0 | requirements.txt | https://github.com/huggingface/transformers |
+| transformers | 5.17.0 | Apache-2.0 | requirements.txt | https://github.com/huggingface/transformers |
 
 `IPython` (BSD-3-Clause, https://github.com/ipython/ipython), which every
 notebook imports, is installed as a dependency of `jupyterlab` (through
@@ -60,14 +60,14 @@ notebook imports, is installed as a dependency of `jupyterlab` (through
 
 ### 2.1 Default build: `course_content/Dockerfile`
 
-Base image: `pytorch/pytorch:2.4.1-cuda11.8-cudnn9-runtime`, published on
+Base image: `pytorch/pytorch:2.7.1-cuda11.8-cudnn9-runtime`, published on
 Docker Hub by the PyTorch project (it is not an NVIDIA NGC container). Users
 pull it directly from Docker Hub; NVIDIA does not redistribute it.
 
 | Package | Version | License | Used by |
 |---------|---------|---------|---------|
-| torch (PyTorch) | 2.4.1 (from the image tag) | BSD-3-Clause | notebooks 01–06, `utils.py`, `data/data.py` |
-| torchvision | 0.19.1 (companion release of torch 2.4.1) | BSD-3-Clause | notebooks 01, 04a, 04b, 05a, 05b |
+| torch (PyTorch) | 2.7.1 (from the image tag) | BSD-3-Clause | notebooks 01–06, `utils.py`, `data/data.py` |
+| torchvision | provided by the PyTorch 2.7.1 base image (not pinned by this repository) | BSD-3-Clause | notebooks 01, 04a, 04b, 05a, 05b |
 | numpy | provided by the base image (not pinned by this repository) | BSD-3-Clause | notebook 05a, `utils.py`, `data/data.py` |
 | Pillow (PIL) | provided by the base image (not pinned by this repository) | HPND (Pillow 10.x and earlier) / MIT-CMU (Pillow 11.0 and later) | notebook 05b |
 | Python (CPython) | provided by the base image | PSF-2.0 | runtime |
@@ -268,7 +268,7 @@ License Text (https://spdx.org/licenses/BSD-3-Clause.html)
     Copyright (c) 2015 Project Jupyter Contributors
     All rights reserved.
 
-**Copyright Project Jupyter Contributors - BSD 3-clause License** (jupyterlab 4.2.0)
+**Copyright Project Jupyter Contributors - BSD 3-clause License** (jupyterlab 4.6.2)
 License Text (https://spdx.org/licenses/BSD-3-Clause.html)
 
     Copyright (c) 2015-2022 Project Jupyter Contributors
@@ -340,7 +340,7 @@ License Text (https://spdx.org/licenses/MPL-2.0.html, https://spdx.org/licenses/
     MIT 2013 (c) Noam Yorav-Raphael, original author.
     Copyright (c) 2013 noamraph
 
-**Copyright The Hugging Face team - Apache-2.0 License** (transformers 5.12.1)
+**Copyright The Hugging Face team - Apache-2.0 License** (transformers 5.17.0)
 License Text (https://spdx.org/licenses/Apache-2.0.html)
 
     Copyright 2018- The Hugging Face team. All rights reserved.
@@ -359,7 +359,7 @@ License Text (https://spdx.org/licenses/BSD-3-Clause.html)
 These are not installed or pinned by this repository; they are listed because
 the course code imports them directly.
 
-**Copyright Facebook, Inc. and contributors - BSD 3-clause License** (torch / PyTorch 2.4.1)
+**Copyright Facebook, Inc. and contributors - BSD 3-clause License** (torch / PyTorch 2.7.1)
 License Text (https://spdx.org/licenses/BSD-3-Clause.html)
 
     Copyright (c) 2016-     Facebook, Inc            (Adam Paszke)
@@ -372,7 +372,7 @@ License Text (https://spdx.org/licenses/BSD-3-Clause.html)
     Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
     (see the PyTorch LICENSE file for the complete list of contributors)
 
-**Copyright Soumith Chintala - BSD 3-clause License** (torchvision 0.19.1)
+**Copyright Soumith Chintala - BSD 3-clause License** (torchvision supplied by the PyTorch base image)
 License Text (https://spdx.org/licenses/BSD-3-Clause.html)
 
     Copyright (c) Soumith Chintala 2016,
