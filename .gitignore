@@ -14,3 +14,6 @@
 .DS_Store
 *.log
 .env.local
+
+# Internal testing notes: excluded from GitHub publication
+/dgx-spark-testing-notes.md
